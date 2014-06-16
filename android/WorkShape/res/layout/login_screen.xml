@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_horizontal_margin" >
+    
+       <com.facebook.widget.LoginButton
+           android:id="@+id/buttonloginFacebook"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="300dp"
+           android:onClick="loginUsingFacebook" />
+    
+    <Button
+        android:id="@+id/buttonloginTwitter"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:onClick="loginUsingTwitter"
+        android:text="@string/twitterbutton" />
+    
+     <com.google.android.gms.common.SignInButton
+         android:id="@+id/sign_in_button"
+         android:layout_width="208dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="350dp"
+         android:onClick="loginUsingGoole" />
+
+     <ImageView
+         android:id="@+id/imageViewPeople"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="150dp"
+         android:layout_gravity="center_horizontal"
+         android:src="@drawable/people" />
+
+     <TextView
+         android:id="@+id/textViewsignIn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="220dp"
+          android:textSize="20dp"
+         android:text="SIGN IN :" />
+
+     <ImageView
+         android:id="@+id/imageViewInfoIcon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="200dp"
+         android:src="@drawable/info_icon_white" />
+    
+  </FrameLayout>
+

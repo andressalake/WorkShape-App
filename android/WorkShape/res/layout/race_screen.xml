@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_horizontal_margin" >
+
+   <ImageView
+        android:id="@+id/imageViewlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right"
+        android:src="@drawable/people" />
+
+   <ImageView
+       android:id="@+id/imageViewStopWatch"
+       android:layout_width="match_parent"
+       android:layout_height="258dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="150dp"
+       android:src="@drawable/stopwatch" />
+
+   <TextView
+       android:id="@+id/textViewTimerRace"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="220dp"
+       android:textSize="80dp"
+       android:textColor ="@color/green"
+       />
+
+   <TextView
+       android:id="@+id/textmessage1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp" />
+       
+
+     <TextView
+       android:id="@+id/textViewmessage2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:textSize="18dp"
+      />
+     
+       <TextView
+       android:id="@+id/textViewmessage3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="100dp"
+       android:textSize="50dp"
+        android:layout_gravity="center_horizontal"
+       />
+  </FrameLayout>
+

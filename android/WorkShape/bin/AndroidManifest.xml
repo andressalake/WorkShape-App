@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qwantech.workshape" 
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:installLocation="internalOnly" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10"  />
+    
+	<uses-permission android:name="android.permission.INTERNET"/>
+ <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+ <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sailboat1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+            <activity 
+            android:name="com.qwantech.workshape.SplashScreen"> 
+            <intent-filter>
+                <action android:name ="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+  <intent-filter>
+      <action android:name="android.intent.action.VIEW" />
+      <category android:name="android.intent.category.DEFAULT" />
+      <category android:name="android.intent.category.BROWSABLE" /> 
+      <data android:scheme="workshape"  /> <!-- android:host="com.qwantech.workshape -->
+  </intent-filter>
+            </activity>
+        <activity 
+            android:name="com.qwantech.workshape.StartActivityTwitter"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="oauth" android:host="t4jsample"/>
+            </intent-filter>
+            </activity>
+              <activity 
+            android:name="com.qwantech.workshape.StartActivityFacebook"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+  <intent-filter>
+      <action android:name="android.intent.action.VIEW" />
+      <category android:name="android.intent.category.DEFAULT" />
+      <category android:name="android.intent.category.BROWSABLE" /> 
+      <data android:scheme="workshape"  /> <!-- android:host="com.qwantech.workshape -->
+  </intent-filter>
+            </activity>
+                <activity 
+            android:name="com.qwantech.workshape.StopGame"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+                <activity 
+            android:name="com.qwantech.workshape.Logged"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+               <activity 
+            android:name="com.qwantech.workshape.EndRace"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+               <activity 
+            android:name="com.qwantech.workshape.MainActivity"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+              <activity 
+            android:name="com.qwantech.workshape.Start"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+                <activity 
+            android:name="com.qwantech.workshape.Google"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+             <activity 
+            android:name="com.qwantech.workshape.LoginScreen"> 
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+        <activity
+            android:name="com.qwantech.workshape.StartActivitGoogle"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+  
+        <activity android:name="com.facebook.LoginActivity" android:label="@string/app_name"></activity>
+    </application>
+
+</manifest>

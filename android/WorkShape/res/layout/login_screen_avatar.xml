@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_horizontal_margin" >
+    
+<ImageView
+         android:id="@+id/imageViewInfoIcon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="200dp"
+         android:src="@drawable/info_icon_white" />
+    <ImageView
+         android:id="@+id/imageViewPeople"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="150dp"
+         android:layout_gravity="center_horizontal"
+         android:src="@drawable/people" />
+
+    <TextView
+        android:id="@+id/textViewchooseAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="@string/choose_an_avatar_" />
+
+    <ImageView
+        android:id="@+id/imageView_Girl1_Avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/girl1_avatar" />
+
+  
+       <ImageView
+        android:id="@+id/imageView_girl3_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="330dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/girl3_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView_girl2_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/girl2_avatar" />
+   
+    <ImageView
+        android:id="@+id/imageView_girl4_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/girl4_avatar" />
+    
+    <ImageView
+        android:id="@+id/imageView_girl5_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/girl5_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView_guy1_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="330dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/guy1_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView_guy2_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="330dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/guy2_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView_guy3_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="330dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/guy3_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView_guy4_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/guy4_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView_guy5_avatar"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="330dp"
+        android:clickable="true"
+        android:onClick="startRace"
+        android:src="@drawable/guy5_avatar" />   
+
+  </FrameLayout>
+
